@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<title>ONM 2018 - Contact</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Web Fonts -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=cyrillic,latin">
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="plugins/animate.css">
+	<link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+
+	<!-- CSS Page Style -->
+	<link rel="stylesheet" href="css/contact.css">	
+	<link rel="stylesheet" href="assets/css/index_style.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body style="background:url(img/img1.jpg); margin-bottom:0;">
+	<!--=== Content Part ===-->
+	<div class="container-fluid">
+		<div class="row equal-height-columns">
+			<div class="col-md-6 col-sm-6 hidden-xs image-block equal-height-column">
+				
+			<section class="g-bg-dark-blue1 valign__middle text-center g-mb-100">
+						<div class="promo-block__item page-scroll animated fadeIn">
+						<span class="g-display-block g-mb-10">3 - 7 aprilie 2018</span>
+						<h2 class="promo-block__item-text g-mb-20" style="color:white;">Olimpiada Națională de matematică</h2>
+						<a href="welcome.php" class="btn-u btn-brd btn-brd-hover btn-u-light">Înapoi la pagina principală</a>
+						</div>
+			</section>	
+			
+			</div>
+
+			<div class="col-md-6 col-sm-6 form-block equal-height-column">
+				<div class="reg-block">
+					<h2 class="margin-bottom-30">Contact</h2>
+					
+					<form name="contact" method="post" action="send_form_email.php">
+					<div class="input-group margin-bottom-20">
+						<span class="input-group-addon rounded-left"><i class="icon-pencil" style="color:#336E7B;"></i></span>
+						<input type="text" class="form-control rounded-right" placeholder="Subiect" name="subiect" maxlength="50" size="30" required>
+					</div>
+
+					<div class="input-group margin-bottom-20">
+						<span class="input-group-addon rounded-left"><i class="icon-user" style="color:#336E7B;"></i></span>
+						<input type="text" class="form-control rounded-right" placeholder="Nume" name="last_name" maxlength="50" size="30" required>
+					</div>
+
+					<div class="input-group margin-bottom-20">
+						<span class="input-group-addon rounded-left"><i class="icon-user" style="color:#336E7B;"></i></span>
+						<input type="text" class="form-control rounded-right" placeholder="Prenume" name="first_name" maxlength="50" size="30" required>
+					</div>
+					
+					<div class="input-group margin-bottom-20">
+						<span class="input-group-addon rounded-left"><i class="icon-envelope" style="color:#336E7B;"></i></span>
+						<input type="email" class="form-control rounded-right" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Introduceti o adresa de email valida" maxlength="80" size="30" required>
+					</div>
+
+					<div class="input-group margin-bottom-20">
+						<span class="input-group-addon rounded-left"><i class="icon-call-end" style="color:#336E7B;"></i></span>
+						<input type="phone" class="form-control rounded-right" placeholder="Telefon" name="telephone" pattern= "[0-9]{10}" title="Doar cifre" maxlength="10" size="30" required>
+					</div>
+
+					<div class="input-group margin-bottom-30">
+							<span class="input-group-addon rounded-left"><i class="icon-bubbles" style="color:#336E7B;"></i></span>
+							<textarea rows="8" id="message" class="form-control rounded-left rounded-right" placeholder="Mesaj" name="comments" maxlength="1000" cols="30" rows="6" required style="border-color: rgba(214, 214, 214, 0.5); border-left:none;"></textarea>
+					</div>
+					<button type="submit" class="btn-u btn-block rounded" style="background-color:#336E7B; color:#fff;">Trimite</button>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div><!--/container-->
+	<!--=== End ===-->
+
+
+		
+
+	<!-- JS Global Compulsory -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/jquery/jquery-migrate.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- JS Implementing Plugins -->
+	<script src="plugins/back-to-top.js"></script>
+	<script src="plugins/backstretch/jquery.backstretch.min.js"></script>
+
+	<!-- JS Customization -->
+	<script src="js/custom.js"></script>
+
+	<!-- JS Page Level -->
+	<script src="js/app.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			App.init();
+		});
+	</script>
+	<script>
+		$(".image-block").backstretch([
+			"assets/img/bg/img6.jpg",
+			"assets/img/bg/img5.jpg",
+			], {
+				fade: 1000,
+				duration: 7000
+			});
+	</script>
+<!--[if lt IE 9]>
+	<script src="plugins/respond.js"></script>
+	<script src="plugins/html5shiv.js"></script>
+	<script src="plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+</body>
+</html>

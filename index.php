@@ -1,0 +1,1 @@
+onm2018.satmar.ro
