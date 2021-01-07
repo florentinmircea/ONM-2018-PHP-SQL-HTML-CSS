@@ -1,0 +1,37 @@
+var ContactPage = function () {
+
+    return {
+
+    	//Map 1
+        initMap: function () {
+			var map;
+			$(document).ready(function(){
+			  map = new GMaps({
+				div: '#map',
+				scrollwheel: false,
+				lat: 40.748866,
+				lng: -73.988366
+			  });
+
+			  var marker = map.addMarker({
+				lat: 40.748866,
+				lng: -73.988366,
+	            title: 'Company, Inc.'
+		       });
+			});
+        },
+
+        //FULL MAP
+        initPanorama: function () {
+		    var panorama;
+		    $(document).ready(function(){
+		      panorama = GMaps.createPanorama({
+		        el: '#panorama',
+		        lat : 40.748866,
+		        lng : -73.988366
+		      });
+		    });
+		}
+
+    };
+}();

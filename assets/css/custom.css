@@ -1,0 +1,121 @@
+/* --------------------------------------------------
+	[1. General]
+----------------------------------------------------  */
+body {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+::-moz-selection {
+	color: #fff;
+	background: #3949a0;
+}
+::selection {
+	color: #fff;
+	background: #3949a0;
+}
+
+/* --------------------------------------------------
+	[#. Promo]
+----------------------------------------------------  */
+.fullscreen-static-image {
+	padding: 250px 0 200px 0;
+}
+.promo-block--cover {
+	position: relative;
+}
+.promo-block--cover:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(20,17,44,.2);
+	content: "";
+	z-index: 1;
+}
+
+.promo-block__item {
+	z-index: 2;
+	color: #fff;
+	padding: 60px 20px;
+	letter-spacing: 3px;
+	position: relative;
+	background: rgba(20,17,44,.9);
+/* 	opacity: 0;
+	transition: all 0.3s ease-in-out; */
+}
+.promo-block__item:before {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	content: "";
+	border: solid 1px rgba(255, 255, 255, .4);
+}
+
+.promo-block__item a:focus {
+	text-decoration: none;
+}
+
+.promo-block__item-text {
+	display: block;
+	font-size: 35px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.42857;
+}
+
+.promo-block__item-text1 {
+	line-height: 25px;
+}
+
+
+
+/* --------------------------------------------------
+	[. Pace Loader]
+----------------------------------------------------  */
+.pace .pace-progress {
+	background: #fff;
+}
+
+.pace .pace-progress-inner {
+	box-shadow: 0 0 10px #fff, 0 0 5px #fff;
+}
+
+.pace .pace-activity {
+	border-top-color: #fff;
+	border-left-color: #fff;
+}
+
+.input-group-addon {
+	padding: 8px 12px 6px;
+}
+
+@media (max-width: 991px) {
+	.equal-height-column-v2[data-image-src$=".jpg"],
+	.equal-height-column-v2[data-image-src$=".png"],
+	.equal-height-column-v2[data-image-src$=".gif"] {
+		display: none;
+	}
+	.equal-height-column-v2 {
+		height: auto !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.no-gutter > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+}
+
+a.btn-u {
+	letter-spacing: 1px;
+	padding: 6px 13px 5px;
+}
